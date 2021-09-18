@@ -5,14 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="include.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+            background: skyblue;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        footer {
+            padding: 20px;
+            background: springgreen;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .message {
+            width: 980px;
+            height: 500px;
+            margin: 0 auto;
+            background: #efefef;
+            text-align: center;
+            line-height: 500px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="./js/include.js"></script>
 </head>
 <body>
     <div id="header-wrap">
         <script>include('header');</script>
     </div>
     <main>
-        メイン
+        <div class="message">
+            main content
+        </div>
     </main>
     <div id="footer-wrap">
         <script>include('footer');</script>

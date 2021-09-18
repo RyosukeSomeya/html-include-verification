@@ -12,7 +12,7 @@ function include(component){
             }
         }
     }
-    xml.open("GET", `./${component}.html`, true);
+    xml.open("GET", `../include/${component}.html`, true);
 
     xml.send(null);
 }
