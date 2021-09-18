@@ -3,7 +3,13 @@ function include(component){
     const target = document.getElementById(idName);
 
     const xml = new XMLHttpRequest();
-    xml.onreadystatechange = () => {
+    // リクエスト設定
+    xml.open("GET", `../include/${component}.html`, true);
+    // リクエスト送信
+    xml.send(null);
+
+    // 通信完了時に呼び出し
+    xml.onload = () => {
         if (xml.readyState === 4) {
             if (xml.status == 200) {
                 target.innerHTML = xml.responseText;
@@ -12,7 +18,4 @@ function include(component){
             }
         }
     }
-    xml.open("GET", `../include/${component}.html`, true);
-
-    xml.send(null);
 }
