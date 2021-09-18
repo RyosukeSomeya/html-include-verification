@@ -5,12 +5,12 @@
 ## 仕様
 
 - javascriptによるヘッダー・フッターのインクルード機能
-  - XMLHTTPRequestによる通信を行い、includeファイルを取得する。
+  - XMLHttpRequestによる通信を行い、includeファイルを取得する。
   - 取得したファイルをjavascriptからのDOM操作により対象のDOM要素に挿入する
 
 ## ローカル環境でのコーディング時の注意点
 
-XMLHTTPRequestの利用は、http/httpsプロトコルによるリクエストでないと、Chromeでのクロスオリジン制約によってエラーとなる。
+XMLHttpRequestの利用は、http/httpsプロトコルによるリクエストでないと、Chromeでのクロスオリジン制約によってエラーとなる。
 
 そのため、表示確認をしながらコーディングを行うためには、ローカルサーバーを使用しhttp通信によるアクセスでのブラウザからの確認が必須となる。
 
